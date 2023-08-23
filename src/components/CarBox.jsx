@@ -1,20 +1,11 @@
-import { useState } from "react";
-
 function CarBox({ data, carID }) {
-  const [carLoad, setCarLoad] = useState(true);
   return (
     <>
       {data[carID].map((car, id) => (
         <div key={id} className="box-cars">
           {/* car */}
           <div className="pick-car">
-            {carLoad && <span className="loader"></span>}
-            <img
-              style={{ display: carLoad ? "none" : "block" }}
-              src={car.img}
-              alt="car_img"
-              onLoad={() => setCarLoad(false)}
-            />
+            <img src={car.img} alt="car_img" />
           </div>
           {/* description */}
           <div className="pick-description">
@@ -58,7 +49,7 @@ function CarBox({ data, carID }) {
               </div>
             </div>
             {/* btn cta */}
-            <a className="cta-btn" href="#booking-section">
+            <a className="cta-btn" href="#home">
               Reserve Now
             </a>
           </div>
