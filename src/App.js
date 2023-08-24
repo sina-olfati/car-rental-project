@@ -4,6 +4,8 @@ import Home from "./Pages/Home";
 import Navbar from "../src/components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Models from "./Pages/Models";
+import TestimonialsPage from "./Pages/TestimonialsPage";
+import Team from "./Pages/Team";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route index path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="models" element={<Models />} />
+        <Route path="testimonials" element={<TestimonialsPage />} />
+        <Route path="team" element={<Team />} />
       </Routes>
     </>
   );
