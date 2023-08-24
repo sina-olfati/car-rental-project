@@ -19,34 +19,22 @@ function Navbar() {
           </div>
           <ul className="mobile-navbar__links">
             <li>
-              <Link onClick={openNav} to="/">
-                Home
-              </Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/about">
-                About
-              </Link>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/models">
-                Models
-              </Link>
+              <Link to="/">Models</Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/testimonials">
-                Testimonials
-              </Link>
+              <Link to="/">Testimonials</Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/team">
-                Our Team
-              </Link>
+              <Link to="/">Our Team</Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/contact">
-                Contact
-              </Link>
+              <Link to="/">Contact</Link>
             </li>
           </ul>
         </div>
